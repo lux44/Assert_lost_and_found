@@ -15,6 +15,30 @@
         android:theme="@style/Theme.Assert_lost_and_found"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".DetailExplainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProductLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WhatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WhereActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
@@ -27,7 +51,7 @@
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".FirstActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

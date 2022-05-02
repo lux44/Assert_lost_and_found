@@ -9,11 +9,12 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.lux.assert_lost_and_found.databinding.ActivityIntroBinding
+import com.lux.assert_lost_and_found.databinding.ActivityFirstBinding
 
-class IntroActivity : AppCompatActivity() {
 
-    val binding:ActivityIntroBinding by lazy { ActivityIntroBinding.inflate(LayoutInflater.from(this)) }
+class FirstActivity : AppCompatActivity() {
+
+    val binding:ActivityFirstBinding by lazy { ActivityFirstBinding.inflate(LayoutInflater.from(this)) }
     val btn_join:Button by lazy { findViewById(R.id.btn_join) }
     val btn_login:Button by lazy { findViewById(R.id.btn_login) }
     val btn_arround:Button by lazy { findViewById(R.id.btn_around) }

@@ -90,6 +90,7 @@
             android:padding="16dp"
             android:id="@+id/tv_foundLocation" />
         <TextView
+            android:id="@+id/tv_location_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -99,12 +100,12 @@
             android:layout_below="@id/tv_time_detail"/>
 
         <fragment
+            android:id="@+id/frag_map1"
+            android:name="com.lux.assert_lost_and_found.ListFragment"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_centerHorizontal="true"
-            android:name="com.lux.assert_lost_and_found.ListFragment"
             android:layout_below="@id/tv_foundLocation"
-            android:id="@+id/frag_map1"/>
+            android:layout_centerHorizontal="true" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -115,6 +116,7 @@
             android:padding="16dp"
             android:id="@+id/tv_productLocation" />
         <TextView
+            android:id="@+id/tv_prod_location_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -122,13 +124,14 @@
             android:fontFamily="@font/elice_regular"
             android:layout_toRightOf="@id/tv_productLocation"
             android:layout_below="@id/frag_map1"/>
+
         <fragment
+            android:id="@+id/frag_map2"
+            android:name="com.lux.assert_lost_and_found.ListFragment"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_centerHorizontal="true"
-            android:name="com.lux.assert_lost_and_found.ListFragment"
             android:layout_below="@id/tv_productLocation"
-            android:id="@+id/frag_map2"/>
+            android:layout_centerHorizontal="true" />
         <Button
             android:layout_width="300dp"
             android:layout_height="80dp"

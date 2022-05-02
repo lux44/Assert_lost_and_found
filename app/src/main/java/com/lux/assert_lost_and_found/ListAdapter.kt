@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter constructor(val context: Context,var items:MutableList<List_Item>) :RecyclerView.Adapter<RecyclerAdapter.VH>(){
+class ListAdapter constructor(val context: Context, var items:MutableList<List_Item>) :RecyclerView.Adapter<ListAdapter.VH>(){
 
     inner class VH (itemView:View) :RecyclerView.ViewHolder(itemView){
         val title:TextView by lazy { itemView.findViewById(R.id.tv_item_title) }
@@ -36,7 +36,7 @@ class RecyclerAdapter constructor(val context: Context,var items:MutableList<Lis
         holder.num.text=item.num
         holder.itemView.setOnClickListener {
             val intent:Intent=Intent(context,ItemActivity::class.java)
-
+            context.startActivity(intent)
         }
     }
 
