@@ -22,7 +22,7 @@ class CustomDialog (val context: Context) {
 
 
         binding.btnWarning1.setOnClickListener {
-            val intent:Intent= Intent(context,WhatActivity::class.java)
+            val intent:Intent= Intent(context,WhereActivity::class.java)
             context.startActivity(intent)
         }
 
